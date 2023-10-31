@@ -7,12 +7,13 @@ export function aufgabe01(args) {
 
     //falls es ein e ist ist, soll es nicht angehängt werden an die Liste.
     if (currentElement === "e")  {
-      result.push("")
+      //result.push("")
     } 
+    //falls es ein grosses E ist, soll es nicht angehängt werden an die Liste.
     else if (currentElement === "E") {
-      result.push("")
-    
-    } else {
+      //result.push("")
+    }
+     else {
       result.push(currentElement)
     }
     
