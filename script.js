@@ -23,8 +23,11 @@ export function aufgabe01(args) {
 export function aufgabe02 (args) {
   const input = args
   const result = []
+
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
+
+    //falls es einen kleinen Buchstaben beinhaltet, soll dieser gross an die Liste anhgehängt werden.
     
   }
   return result.join("")
