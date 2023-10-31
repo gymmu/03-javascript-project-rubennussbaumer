@@ -25,10 +25,12 @@ export function aufgabe02 (args) {
   const result = []
 
   for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
+    let currentElement = input[i]
 
     //falls es einen kleinen Buchstaben beinhaltet, soll dieser gross an die Liste anhgehängt werden.
-    
+    currentElement=currentElement.toUpperCase ()
+    result.push(currentElement)
+
   }
   return result.join("")
 }
