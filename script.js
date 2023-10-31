@@ -5,8 +5,13 @@ export function aufgabe01(args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
 
-    if (currentElement === "e") {
+    //falls es ein e ist ist, soll es nicht angehängt werden an die Liste.
+    if (currentElement === "e")  {
       result.push("")
+    } 
+    else if (currentElement === "E") {
+      result.push("")
+    
     } else {
       result.push(currentElement)
     }
