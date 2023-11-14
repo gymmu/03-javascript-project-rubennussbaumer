@@ -38,10 +38,20 @@ export function aufgabe02 (args) {
 export function aufgabe03 (args) {
   const input = args
   const result = []
+
+  let countE = 0
+
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    
+
+    if (currentElement === "E") {
+      countE++
+    }
+    else if (currentElement === "e") {
+    countE++
+    }
   }
-  return result.join("")
+  return countE
 }
 
+  
