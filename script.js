@@ -70,7 +70,13 @@ export function aufgabe04 (args) {
       result.push(currentElement)
     }
   }
-  return result.join("")
+
+  const clearedString = result.join("")
+
+  const tmp = clearedString.split(" ")
+
+  print.tmp
+  return tmp.length
 }
 
   
