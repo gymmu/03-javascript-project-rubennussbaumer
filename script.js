@@ -46,9 +46,11 @@ export function aufgabe03 (args) {
 
     if (currentElement === "E") {
       countE++
+      //Zähle grosse E
     }
     else if (currentElement === "e") {
     countE++
+    //zähle auch kleine e
     }
   }
   return countE
