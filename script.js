@@ -83,11 +83,16 @@ export function aufgabe04 (args) {
   const result = []
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-     if (currentElement.toUpperCase() === currentElement){
+    if(currentElement === " "){
+
+    }
+    else if (currentElement === "."){
+
+    }
+     else if (currentElement.toUpperCase() === currentElement){
       return true
      }
      
-    
   }
   return false 
 }
