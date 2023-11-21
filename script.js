@@ -84,17 +84,18 @@ export function aufgabe04 (args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     if(currentElement === " "){
-
+      //ignoriert, wenn ein Leerzeichen steht.
     }
     else if (currentElement === "."){
+      //ignoriert, wenn ein Punkt steht.
 
     }
      else if (currentElement.toUpperCase() === currentElement){
-      return true
+      return true // wenn die Buchstaben mit der Grossgeschriebenen Version übereinstimmen, soll es als richtig angegeben werden.
      }
      
   }
-  return false 
+  return false // wenn die Buchstaben mit der Grossgeschriebenen Version nicht übereinstimmen, soll es als falsch angegeben werden.
 }
 
   
