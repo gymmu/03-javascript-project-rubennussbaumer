@@ -100,12 +100,18 @@ export function aufgabe04 (args) {
 
 export function aufgabe09 (args) {
   const input = args
-  const result = []
-  for (let i = 0; i < s.length; i++) {
-    const currentElement = s[i]
-    
+
+   let countLetter = 0
+  for (let i = 0; i < input.length; i++) {
+    countLetter++ // zähle die Buchstaben der Variabel countLetter
   }
-  return result.join("")
+  if(countLetter === 6){
+    return true //wenn es 6 Buchstaben hat gebe true zurück.
+  }
+  return false
+
+
+  
 }
 
   
