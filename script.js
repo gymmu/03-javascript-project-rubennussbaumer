@@ -109,9 +109,30 @@ export function aufgabe09 (args) {
     return true //wenn es 6 Buchstaben hat gebe true zurück.
   }
   return false
-
-
   
+}
+
+export function aufgabe10 (args) {
+  const input = args
+  
+  if (input.length !== 7) return false
+  if (input[0] !== "#") return false
+
+  for (let i = 1; i < input.length; i++) {
+    const currentElement = input[i]
+    const ascii = currentElement.charCodeAt (0)
+    if(48 <= ascii && ascii <= 57) {
+
+    }else if (65<= ascii && ascii <= 70) {
+
+    } else {
+      return false
+    }
+  }
+
+
+
+  return true
 }
 
   
