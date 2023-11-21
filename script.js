@@ -78,14 +78,18 @@ export function aufgabe04 (args) {
   print.tmp
   return tmp.length
 }
- export function aufgabe (args) {
+ export function aufgabe05 (args) {
   const input = args
   const result = []
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
+     if (currentElement.toUpperCase() === currentElement){
+      return true
+     }
+     
     
   }
-  return result.join("")
+  return false 
 }
 
   
