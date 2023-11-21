@@ -98,6 +98,14 @@ export function aufgabe04 (args) {
   return false // wenn die Buchstaben mit der Grossgeschriebenen Version nicht übereinstimmen, soll es als falsch angegeben werden.
 }
 
-
+export function aufgabe09 (args) {
+  const input = args
+  const result = []
+  for (let i = 0; i < s.length; i++) {
+    const currentElement = s[i]
+    
+  }
+  return result.join("")
+}
 
   
