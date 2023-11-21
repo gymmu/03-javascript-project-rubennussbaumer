@@ -66,7 +66,7 @@ export function aufgabe04 (args) {
 
     else if (currentElement === "+") {}
 
-    else {
+     else {
       result.push(currentElement)
     }
   }
