@@ -98,4 +98,6 @@ export function aufgabe04 (args) {
   return false // wenn die Buchstaben mit der Grossgeschriebenen Version nicht übereinstimmen, soll es als falsch angegeben werden.
 }
 
+
+
   
