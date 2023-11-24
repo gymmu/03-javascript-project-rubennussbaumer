@@ -125,6 +125,7 @@ export function aufgabe10 (args) {
     // ist eine Ziffer
     }else if (65<= ascii && ascii <= 70) {
     // ist A-F
+    
     } else {
       return false
     }
@@ -134,5 +135,7 @@ export function aufgabe10 (args) {
 
   return true
 }
+
+
 
   
