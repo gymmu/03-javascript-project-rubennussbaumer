@@ -174,5 +174,5 @@ export function aufgabe11 (args) {
       const currentElement = input[i]
       
     }
-    return result.join("")
+    return -1
   }
