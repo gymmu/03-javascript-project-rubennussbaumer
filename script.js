@@ -120,7 +120,7 @@ export function aufgabe10 (args) {
 
   for (let i = 1; i < input.length; i++) {
     const currentElement = input[i]
-    const ascii = currentElement.charCodeAt (0)
+    const ascii = currentElement.charCodeAt(0)
     if(48 <= ascii && ascii <= 57) {
     // ist eine Ziffer
     }else if (65<= ascii && ascii <= 70) {
@@ -138,13 +138,16 @@ export function aufgabe10 (args) {
 
 export function aufgabe11 (args) {
   const input = args
-  const result = []
+
+  if (input.length > 1) return null
+
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    
+    const ascii = currentElement.charCodeAt(0)
+    return ascii
   }
   
-  return result.join("")
+  return null
 }
 
   
