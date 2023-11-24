@@ -116,12 +116,13 @@ export function aufgabe10 (args) {
   const input = args
   
   if (input.length !== 7) return false
+   // wir fügen ein function guard hinzu, damit kontrolliert wird, dass nur 7 Zeichen akzeptiert werden.
   if (input[0] !== "#") return false
 
   for (let i = 1; i < input.length; i++) {
     const currentElement = input[i]
     const ascii = currentElement.charCodeAt(0)
-    if(48 <= ascii && ascii <= 57) {
+    if(48 <= ascii && ascii <= 57) { 
     // ist eine Ziffer
     }else if (65<= ascii && ascii <= 70) {
     // ist A-F
@@ -139,12 +140,14 @@ export function aufgabe10 (args) {
 export function aufgabe11 (args) {
   const input = args
 
-  if (input.length > 1) return null
+  if (input.length > 1) return null 
+  // der function guard sagt hier, dass nur maximal ein Zeichen eingegeben werden kann.
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     const ascii = currentElement.charCodeAt(0)
-    return ascii
+    return ascii 
+    //das zeigt auf, dass es den ascii code für den ersten Buchstaben zurück geben soll.
   }
   
   return null
