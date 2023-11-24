@@ -163,7 +163,16 @@ export function aufgabe11 (args) {
       // geht zurück zum Anfang wenn es kein e hat auf der Position.
       }
     }
-    
     return -1
     //gibt die Position in einer Zahl an.
+  }
+
+  export function aufgabe13 (args) {
+    const input = args
+    const result = []
+    for (let i = 0; i < input.length; i++) {
+      const currentElement = input[i]
+      
+    }
+    return result.join("")
   }
