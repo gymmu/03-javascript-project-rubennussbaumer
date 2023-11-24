@@ -160,9 +160,10 @@ export function aufgabe11 (args) {
       const currentElement = input[i]
       if (currentElement === "e") {
         return i
-      
+      // geht zurück zum Anfang wenn es kein e hat auf der Position.
       }
     }
     
     return -1
+    //gibt die Position in einer Zahl an.
   }
