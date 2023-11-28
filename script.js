@@ -171,9 +171,11 @@ export function aufgabe11 (args) {
     const input = args
     const result = []
     for (let i = input.length-1; i >= 0; i--) {
+      //wir stellen den Zählanfang auf -1, damit er zur letzten Position geht und dort anfängt zu zählen und wir machen i ist grösser gleich 0, damit er Rückwärts zählt.
       const currentElement = input[i]
       if (currentElement === "e")
       return i
     }
     return -1
+    //gibt die letzte Position von "e" in einer Zahl an
   }
