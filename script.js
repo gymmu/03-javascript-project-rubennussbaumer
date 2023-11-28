@@ -179,3 +179,15 @@ export function aufgabe11 (args) {
     return -1
     //gibt die letzte Position von "e" in einer Zahl an
   }
+
+  export function aufgabe14 (args) {
+    const input = args
+    const result = []
+    for (let i = 0; i < input.length; i++) {
+      const currentElement = input[i]
+      if (currentElement === "e")
+      return 2
+    }
+    
+    return -1
+  }
