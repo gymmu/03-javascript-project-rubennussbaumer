@@ -98,6 +98,7 @@ export function aufgabe04 (args) {
   return false // wenn die Buchstaben mit der Grossgeschriebenen Version nicht übereinstimmen, soll es als falsch angegeben werden.
 }
 
+
 export function aufgabe09 (args) {
   const input = args
 
@@ -195,9 +196,23 @@ export function aufgabe11 (args) {
   export function aufgabe15 (args) {
     const input = args
     const result = []
-    for (let i = 0; i < input.length; i++) {
+
+    if (input.lastIndexOf(" ") == input.length -1) {
+      for (let i = 0; i < input.length; i++) {
+        const currentElement = input[i]
+        result.push(currentElement)
+    }
+  } else {
+  for (let i = 0; i < input.length; i++) {
       const currentElement = input[i]
+      
+      if (currentElement !== " " ) {
+        result.push(currentElement)
+      } else {
+        return result.join("")
+      }
       
     }
     return result.join("")
   }
+}
