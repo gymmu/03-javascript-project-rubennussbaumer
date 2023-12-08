@@ -61,14 +61,14 @@ export function aufgabe04 (args) {
   const result = []
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    
-    if (currentElement === "-") {}
 
+    if(currentElement === "-"){}
+    //sortiert alle - aus.
     else if (currentElement === "+") {}
-
-     else {
+    //sortiert alle + aus
+    else {
       result.push(currentElement)
-    }
+    } 
   }
 
   const clearedString = result.join("")
@@ -99,6 +99,35 @@ export function aufgabe04 (args) {
 }
 
 export function aufgabe06 (args) {
+  const input = args
+  const result = []
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    //gib mir den ascii wert von currentelement
+    const ascii = currentElement.charCodeAt(0)
+    // prüfe ob ascii eine ziffer ist
+    if (ascii >= 48 && ascii <= 57) {
+     
+    } else if (ascii >= 65 && ascii <= 90) {
+      // prüfe ob ascii eine großbuchstabe ist
+    } else if (ascii >= 97 && ascii <= 122) {
+      // prüfe ob ascii eine kleinbuchstabe ist
+    } else if (ascii === 32) {
+      // prüfe ob ascii ein Leerzeichen ist
+    } else {
+      return true
+      //gebe true zurück wenn es ein Sonderzeichen beinhaltet
+    }
+
+
+
+  }
+  return false
+  //gebe false zurück wenn der Satz gar nichts beinhaltet
+}
+
+
+export function aufgabe07 (args) {
   const input = args
   const result = []
   for (let i = 0; i < input.length; i++) {
@@ -196,6 +225,7 @@ export function aufgabe11 (args) {
     for (let i = 0; i < input.length; i++) {
       const currentElement = input[i]
       if (currentElement === "e")
+    
       return 2
     }
     
