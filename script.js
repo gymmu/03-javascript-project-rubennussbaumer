@@ -59,25 +59,55 @@ export function aufgabe03 (args) {
 export function aufgabe04 (args) {
   const input = args
   const result = []
-  for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
 
-    if(currentElement === "-"){}
-    //sortiert alle - aus.
-    else if (currentElement === "+") {}
-    //sortiert alle + aus
-    else {
-      result.push(currentElement)
-    } 
+  // lösche alle sonderzeichen ausser den leerzeichen aus input
+  const cleanText = []
+    for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const ascii = currentElement.charCodeAt(0)
+    // wenn der ascii wert kein sonderzeichen ist, soll der wert angehängt werden.
+    if (32 === ascii) {
+      cleanText.push(currentElement)
+    } else if (65 <= ascii && ascii <= 90) {
+      cleanText.push(currentElement)
+    } else if (97 <= ascii && ascii <= 122) {
+      cleanText.push(currentElement)
+    }
   }
 
-  const clearedString = result.join("")
+  const tmp = cleanText.join("")
+  const tmpText = []
 
-  const tmp = clearedString.split(" ")
+  for (let i = 0; i < tmp.length; i++) {
+    const currentElement = tmp[i]
+    const nextElement = tmp[i + 1]
+    if (currentElement === " " && nextElement === " ") {
+      // ignoriert mehrere Leerzeichen nacheinander
+    } else {
+      tmpText.push(currentElement)
+    }
+  }
 
-  print.tmp
-  return tmp.length
+
+
+ const clean = tmpText.join("")
+
+
+ 
+  let words = 0
+  for (let i = 0; i < clean.length; i++) {
+    const currentElement = clean[i]
+    if (currentElement === " ") {
+      words++
+    }
+  }
+  return words + 1
+
 }
+
+
+
+
  export function aufgabe05 (args) {
   const input = args
   const result = []
@@ -136,6 +166,7 @@ export function aufgabe07 (args) {
     if (currentElement === "u" && input[i+1] === "n" && input[i+2] === "d") {
       return true
      //prüft ob das Wort "und" vorkommt das Input i+1 zeigt an, dass der nächste Buchstabe im Wort immer an der nächstgelegenen Position sein soll.
+
     }
     }
   
