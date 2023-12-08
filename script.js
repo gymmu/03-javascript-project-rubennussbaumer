@@ -127,15 +127,18 @@ export function aufgabe06 (args) {
 }
 
 export function aufgabe07 (args) {
-  //prüfe ob das Wort "und" in einem Satz vorkommt.
-
-
   const input = args
   const result = []
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    
-  }
+    //prüfe ob das Wort "und" vorkommt
+
+    if (currentElement === "u" && input[i+1] === "n" && input[i+2] === "d") {
+      return true
+     //prüft ob das Wort "und" vorkommt das Input i+1 zeigt an, dass der nächste Buchstabe im Wort immer an der nächstgelegenen Position sein soll.
+    }
+    }
+  
   return result.join("")
 }
 
