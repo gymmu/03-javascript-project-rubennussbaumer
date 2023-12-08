@@ -109,11 +109,11 @@ export function aufgabe06 (args) {
     if (ascii >= 48 && ascii <= 57) {
      
     } else if (ascii >= 65 && ascii <= 90) {
-      // prüfe ob ascii eine großbuchstabe ist
+      // prüft ob ascii eine großbuchstabe ist
     } else if (ascii >= 97 && ascii <= 122) {
-      // prüfe ob ascii eine kleinbuchstabe ist
+      // prüft ob ascii eine kleinbuchstabe ist
     } else if (ascii === 32) {
-      // prüfe ob ascii ein Leerzeichen ist
+      // prüft ob ascii ein Leerzeichen ist
     } else {
       return true
       //gebe true zurück wenn es ein Sonderzeichen beinhaltet
@@ -126,8 +126,10 @@ export function aufgabe06 (args) {
   //gebe false zurück wenn der Satz gar nichts beinhaltet
 }
 
-
 export function aufgabe07 (args) {
+  //prüfe ob das Wort "und" in einem Satz vorkommt.
+
+
   const input = args
   const result = []
   for (let i = 0; i < input.length; i++) {
