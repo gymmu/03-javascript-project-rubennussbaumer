@@ -173,6 +173,15 @@ export function aufgabe07 (args) {
   return result.join("")
 }
 
+export function aufgabe08 (args) {
+  const input = args
+  const result = []
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    result.push(currentElement)
+  }
+  return result.join(" ")
+}
 export function aufgabe09 (args) {
   const input = args
 
