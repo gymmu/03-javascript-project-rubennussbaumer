@@ -176,7 +176,13 @@ export function aufgabe07 (args) {
 export function aufgabe08 (args) {
   const input = args
   const result = []
+  
   for (let i = 0; i < input.length; i++) {
+    //ersetze alle "e" durch "3"
+
+    if (input[i] === "e") {
+      result.push("3")
+    }
     const currentElement = input[i]
     result.push(currentElement)
   }
