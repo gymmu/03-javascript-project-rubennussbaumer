@@ -311,28 +311,30 @@ export function aufgabe11 (args) {
   }
 }
 
-export function aufgabe16 (args) {
+export function aufgabe16(args) {
   const input = args
-  const result1 = []
-  const result2 = []
-  let readText = true
+  const result1 = [] // Leerer Array für die erste Ergebnisgruppe
+  const result2 = [] // Leerer Array für die zweite Ergebnisgruppe
+  let readText = true // Boolean-Variable, die angibt, ob Text gelesen werden soll
+
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     if (currentElement === "$" && readText !== false) {
-      readText = false
+      readText = false // Wenn das aktuelle Element "$" ist und readText nicht false ist, wird readText auf false gesetzt
     } else {
       if (readText === true) {
-        result1.push(currentElement)
-      }
-      else if (readText === false) {
-        result2.push(currentElement)
+        result1.push(currentElement) // Wenn readText true ist, wird das aktuelle Element zur ersten Ergebnisgruppe hinzugefügt
+      } else if (readText === false) {
+        result2.push(currentElement) // Wenn readText false ist, wird das aktuelle Element zur zweiten Ergebnisgruppe hinzugefügt
       }
     }
   }
+
   if (result2.join("") !== "") {
-  return result1.join("") + "," + result2.join("")
+    return result1.join("") + "," + result2.join("") // Wenn die zweite Ergebnisgruppe nicht leer ist, werden die Elemente der ersten und zweiten Ergebnisgruppe mit einem Komma verbunden und zurückgegeben
   } else {
-    return result1.join("")
+    return result1.join("") // Wenn die zweite Ergebnisgruppe leer ist, werden nur die Elemente der ersten Ergebnisgruppe zurückgegeben
   }
 }
+
 
