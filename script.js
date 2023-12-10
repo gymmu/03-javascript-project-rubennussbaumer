@@ -272,12 +272,17 @@ export function aufgabe11 (args) {
 
   export function aufgabe14 (args) {
     const input = args
-    const result = []
+    let countE = 0
+   
+
+
     for (let i = 0; i < input.length; i++) {
       const currentElement = input[i]
-      if (currentElement === "e")
+      if (currentElement === "e"){
+        count++
+      }
     
-      return 2
+      
     }
     
     return -1
