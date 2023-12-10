@@ -178,13 +178,13 @@ export function aufgabe08 (args) {
   const result = []
   
   for (let i = 0; i < input.length; i++) {
-    //ersetze alle "e" durch "3"
-
+    const currentElement= input[i]
+    }
     if (input[i] === "e") {
       result.push("3")
+    } else {
+      result.push(currentElement)
     }
-    const currentElement = input[i]
-    result.push(currentElement)
   }
   return result.join(" ")
 }
