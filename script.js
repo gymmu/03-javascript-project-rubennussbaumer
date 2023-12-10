@@ -283,7 +283,9 @@ export function aufgabe11 (args) {
       }
     }
     if(count == input.length) return(2)
+    //gibt 2 an wenn es genügend "e" im Text hat.
     else return (-1)
+  //gibt -1 an wenn es nicht genügend "e" im Text hat.
   }
 
   export function aufgabe15 (args) {
