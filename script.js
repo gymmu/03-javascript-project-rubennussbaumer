@@ -310,3 +310,4 @@ export function aufgabe11 (args) {
     return result.join("")
   }
 }
+
