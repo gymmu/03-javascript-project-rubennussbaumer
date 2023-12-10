@@ -283,7 +283,7 @@ export function aufgabe11 (args) {
       }
     }
     if(count == input.length) return(2)
-    
+    else return (-1)
   }
 
   export function aufgabe15 (args) {
