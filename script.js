@@ -281,11 +281,9 @@ export function aufgabe11 (args) {
       if (currentElement === "e"){
         count++
       }
-    
-      
     }
+    if(count == input.length) return(2)
     
-    return -1
   }
 
   export function aufgabe15 (args) {
