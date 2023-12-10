@@ -272,15 +272,20 @@ export function aufgabe11 (args) {
 
   export function aufgabe14 (args) {
     const input = args
-    const result = []
+    let countE = 0
+   
+
+
     for (let i = 0; i < input.length; i++) {
       const currentElement = input[i]
-      if (currentElement === "e")
-    
-      return 2
+      if (currentElement === "e"){
+        count++
+      }
     }
-    
-    return -1
+    if(count == input.length) return(2)
+    //gibt 2 an wenn es genügend "e" im Text hat.
+    else return (-1)
+  //gibt -1 an wenn es nicht genügend "e" im Text hat.
   }
 
   export function aufgabe15 (args) {
