@@ -380,5 +380,16 @@ export function aufgabe20 (args) {
   return result.join("")
 }
 
+export function aufgabe27 (args) {
+  const input = args
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i].charCodeAt(0)
+    
+    if (input.length == 0) return false
+    if (47 >= currentElement || currentElement >= 58) return false
+  }
+  return true
+}
 
 
