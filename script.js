@@ -209,26 +209,26 @@ export function aufgabe09 (args) {
 export function aufgabe10 (args) {
   const input = args
   
-  if (input.length !== 7) return false
+  if (input.length !== 7) return false 
    // wir fügen ein function guard hinzu, damit kontrolliert wird, dass nur 7 Zeichen akzeptiert werden.
-  if (input[0] !== "#") return false
+  if (input[0] !== "#") return false // wir fügen ein function guard hinzu, damit kontrolliert wird, dass das erste Zeichen # ist.
 
   for (let i = 1; i < input.length; i++) {
-    const currentElement = input[i]
-    const ascii = currentElement.charCodeAt(0)
+    const currentElement = input[i] 
+    const ascii = currentElement.charCodeAt(0) // ascii code ausgeben
     if(48 <= ascii && ascii <= 57) { 
     // ist eine Ziffer
     }else if (65<= ascii && ascii <= 70) {
     // ist A-F
     
     } else {
-      return false
+      return false // gibt falsch zurück wenn nicht nur 0-9 und A-F in der Eingabe vorkommen.
     }
   }
 
 
 
-  return true
+  return true 
 }
 
 export function aufgabe11 (args) {
@@ -294,7 +294,8 @@ export function aufgabe11 (args) {
     const result = []
 
     if (input.lastIndexOf(" ") == input.length -1) {
-      for (let i = 0; i < input.length; i++) {
+      //wenn das letzte Element der Eingabe ein Leerzeichen ist
+      for (let i = 0; i < input.length; i++) { 
         const currentElement = input[i]
         result.push(currentElement)
     }
@@ -302,8 +303,9 @@ export function aufgabe11 (args) {
   for (let i = 0; i < input.length; i++) {
       const currentElement = input[i]
       
-      if (currentElement !== " " ) {
+      if (currentElement !== " " ) { 
         result.push(currentElement)
+        //wenn das aktuelle Element kein Leerzeichen ist, soll es angehngen werden an die Liste
       } else {
         return result.join("")
       }
