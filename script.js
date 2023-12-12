@@ -180,10 +180,12 @@ export function aufgabe08(args) {
   for (let i = 0; i < input.length; i++) {      
     const currentElement = input[i]        
 
-    if (currentElement === "e") {   
+    if (currentElement === "e") {    
+      // wenn es ein e ist, soll es nicht angehängt werden an die Liste.
       result.push(3)                                                           
     } else {                                                 
-      result.push(currentElement)                             
+      result.push(currentElement)      
+      // wenn es kein e ist, soll es angehängt werden an die Liste.                       
     }
   }
   return result.join("")                                        
@@ -412,6 +414,6 @@ export function aufgabe27 (args) {
     if (input.length == 0) return false
     if (47 >= currentElement || currentElement >= 58) return false
   }
-  return true
+return true
 }
 
