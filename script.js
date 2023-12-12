@@ -380,6 +380,29 @@ export function aufgabe20 (args) {
   return result.join("")
 }
 
+export function aufgabe24 (args) {
+  const input = args
+  const result = []
+  if (input.length == 1) return input 
+  // Wenn die Eingabe nur ein Zeichen lang ist, wird dieses Zeichen zurückgegeben
+
+  const firstElement = input[0]
+  // Speichert das erste Element der Eingabe
+  const lastElement = input[input.length - 1] 
+  // Speichert das letzte Element der Eingabe
+
+
+result.push(lastElement)
+  for (let i = 1; i < input.length -1; i++) {
+     // Startet mit dem zweiten Element der Eingabe
+    const currentElement = input[i]
+    result.push(currentElement)
+  }
+  result.push(firstElement)
+  return result.join("")
+}
+
+
 export function aufgabe27 (args) {
   const input = args
 
@@ -391,5 +414,4 @@ export function aufgabe27 (args) {
   }
   return true
 }
-
 
