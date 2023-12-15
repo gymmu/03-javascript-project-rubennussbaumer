@@ -406,9 +406,9 @@ export function aufgabe21 (args) {
   const input = args
   const result = []
   
-for (let i = input.length; i > -1; i--) {
-  const currentElement = input[i]
-  result.push(currentElement)
+for (let i = input.length; i > -1; i--) { // Startet mit dem letztem Element der Eingabe
+  const currentElement = input[i] 
+  result.push(currentElement) // Fügt das aktuelle Element der Ergebnisliste hinzu
 }
 
   return result.join("")
