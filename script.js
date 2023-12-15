@@ -389,6 +389,19 @@ export function aufgabe18 (args) {
   // Überprüft die Werte der inputName- und inputAge-Arrays und gibt entsprechende Sätze zurück
 }
 
+export function aufgabe19 (args) {
+  const input = args
+  const result = []
+  
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  result.push(currentElement)
+  result.push(currentElement)
+}
+
+  return result.join("")
+}
+
 export function aufgabe20 (args) {
   const input = args
   const result = []
