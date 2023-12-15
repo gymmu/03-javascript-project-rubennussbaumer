@@ -377,11 +377,11 @@ export function aufgabe20 (args) {
   
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    if(currentElement == "." && input[i+1] !== " ") return false
-    else if(currentElement == "." && input[i+1] == " ") return true
+    if(currentElement == "." && input[i+1] !== " ") return false // wenn nach einem Punkt kein Leerzeichen steht, wird false zurückgegeben
+    else if(currentElement == "." && input[i+1] == " ") return true // wenn nach einem Punkt ein Leerzeichen steht, wird true zurückgegeben
   }
 
-  return result.join("")
+  return result.join("") // Wenn kein Punkt gefunden wurde, wird die Eingabe zurückgegeben
 }
 
 export function aufgabe24 (args) {
@@ -413,10 +413,10 @@ export function aufgabe27 (args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i].charCodeAt(0) // Konvertiert das aktuelle Element in einen Unicode-Wert
     
-    if (input.length == 0) return false
+    if (input.length == 0) return false // Wenn die Eingabe leer ist, wird false zurückgegeben
     if (47 >= currentElement || currentElement >= 58) return false // Wenn das aktuelle Element keine Zahlist, wird false zurückgegeben
   }
-return true
+return true // Wenn alle Elemente eine Zahl sind, wird true zurückgegeben
 }
 
 
