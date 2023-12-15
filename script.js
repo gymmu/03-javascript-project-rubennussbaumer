@@ -427,21 +427,7 @@ for (let i = input.length; i > -1; i--) { // Startet mit dem letztem Element der
   return result.join("")
 }
 
-export function aufgabe22 (args) {
-  const input = args
-  const result = []
-  
-  for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
-    if (input[i] !== "k" && input[i+1] !== "i" && input[i+2] !== "e" && input[i+3] !== "r") result.push("_") 
-    // Wenn das aktuelle Element kein k, i, e oder r ist, wird das "_" angehängt
-    else result.push(currentElement) 
-    // Wenn das aktuelle Element ein k, i, e oder r ist, wird es angehängt
 
-  }
-
-  return result.join("")
-}
 export function aufgabe23 (args) {
   const input = args 
   const result = []
