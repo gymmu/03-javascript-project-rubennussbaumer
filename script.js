@@ -68,10 +68,10 @@ export function aufgabe04 (args) {
     // wenn der ascii wert kein sonderzeichen ist, soll der wert angehängt werden.
     if (32 === ascii) {
       cleanText.push(currentElement)
-    } else if (65 <= ascii && ascii <= 90) {
-      cleanText.push(currentElement)
-    } else if (97 <= ascii && ascii <= 122) {
-      cleanText.push(currentElement)
+    } else if (65 <= ascii && ascii <= 90) { // wenn der ascii wert eine großbuchstabe ist
+      cleanText.push(currentElement) // soll der wert angehängt werden
+    } else if (97 <= ascii && ascii <= 122) { // wenn der ascii wert eine kleinbuchstabe ist
+      cleanText.push(currentElement) // soll der wert angehängt werden
     }
   }
 
@@ -79,12 +79,12 @@ export function aufgabe04 (args) {
   const tmpText = []
 
   for (let i = 0; i < tmp.length; i++) {
-    const currentElement = tmp[i]
-    const nextElement = tmp[i + 1]
+    const currentElement = tmp[i] 
+    const nextElement = tmp[i + 1] 
     if (currentElement === " " && nextElement === " ") {
       // ignoriert mehrere Leerzeichen nacheinander
     } else {
-      tmpText.push(currentElement)
+      tmpText.push(currentElement) 
     }
   }
 
@@ -97,11 +97,11 @@ export function aufgabe04 (args) {
   let words = 0
   for (let i = 0; i < clean.length; i++) {
     const currentElement = clean[i]
-    if (currentElement === " ") {
-      words++
+    if (currentElement === " ") { // wenn es ein Leerzeichen ist
+      words++ // steigt die Zahl der Wörter um 1
     }
   }
-  return words + 1
+  return words + 1 // die Anzahl der Wörter plus 1 zurückgeben
 
 }
 
