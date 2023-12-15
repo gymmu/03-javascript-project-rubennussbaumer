@@ -285,7 +285,7 @@ export function aufgabe11 (args) {
       }
     }
     if (count == input.length) return(2)
-    else return(-1)
+    else return(-1)  
   }
   
 
@@ -419,3 +419,19 @@ export function aufgabe27 (args) {
 return true
 }
 
+export function bubbleSort (args) {
+  const text = args
+  const list = text.split ("") 
+  for (let i = 0; 1 < list.length - 1; i++) {
+  const currentElement = list[i]
+  const nextElement = list[i + 1]
+  if (currentElement. charCodeAt (0) > nextElement.charCodeAt (0)) {
+  const tmp = list[i + 1]
+  list[i + 1] = list[i]
+  list[i] = tmp
+  i = -1 
+  }
+}
+  const result =list.join("")
+  return result
+}
