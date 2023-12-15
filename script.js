@@ -393,11 +393,12 @@ export function aufgabe19 (args) {
   const input = args
   const result = []
   
-for (let i = 0; i < input.length; i++) {
-  const currentElement = input[i]
-  result.push(currentElement)
-  result.push(currentElement)
-}
+for (let i = 0; i < input.length; i++) { 
+  const currentElement = input[i] 
+  result.push(currentElement) 
+  result.push(currentElement) 
+} //pusht zwei mal das currentElement um die Eingabe zu verdoppeln
+
 
   return result.join("")
 }
