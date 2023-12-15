@@ -402,6 +402,19 @@ export function aufgabe20 (args) {
   return result.join("") // Wenn kein Punkt gefunden wurde, wird die Eingabe zurückgegeben
 }
 
+export function aufgabe21 (args) {
+  const input = args
+  const result = []
+  
+for (let i = input.length; i > -1; i--) {
+  const currentElement = input[i]
+  result.push(currentElement)
+}
+
+  return result.join("")
+}
+
+
 export function aufgabe24 (args) {
   const input = args
   const result = []
