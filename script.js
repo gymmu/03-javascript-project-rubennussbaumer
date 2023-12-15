@@ -427,20 +427,20 @@ result.push(lastElement)
 export function aufgabe26 (args) {
   const input = args
   const list = input.split("") 
-  for (let i = 0; i < list.length - 1; i++) {
+  for (let i = 0; i < list.length - 1; i++) { 
     const currentElement = list[i]
     const nextElement = list[i + 1]
-    if (nextElement.charCodeAt(0) < currentElement.charCodeAt(0)) {
+    if (nextElement.charCodeAt(0) < currentElement.charCodeAt(0)) { // Wenn das nächste Element kleiner als das aktuelle Element ist
       
-      const temporary = list[i + 1]
-      list[i + 1] = list[i]
-      list[i] = temporary
+      const temporary = list[i + 1] // Tauscht die beiden Elemente
+      list[i + 1] = list[i] // Tauscht das aktuelle Element mit dem vorherigen
+      list[i] = temporary // Tauscht das vorherige Element mit dem aktuellen
       i = -1 
     }
   }
-  const result = list.join("")
-  console.log(result)
-  return result
+  const result = list.join("") 
+  console.log(result) 
+ return result
 }
 
 
