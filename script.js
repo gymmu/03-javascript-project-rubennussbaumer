@@ -466,6 +466,32 @@ result.push(lastElement)
   return result.join("")
 }
 
+export function aufgabe25 (args) {
+  const input = args
+  const result = []
+  if(input.length <= 1) { //wenn die Anzahl der Elemente 1 oder weniger ist
+    return ""} //leere Eingabe zurückgeben
+  if(input.length % 2 === 0) { //wenn die Anzahl der Elemente gerade ist
+   let delElement1 = input.length / 2 - 1 //dividiert die Anzahl der Elemente durch 2 und subtrahiert 1
+   let delElement2 = input.length / 2 //dividiert die Anzahl der Elemente durch 2
+   for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if(currentElement === input[delElement1] || currentElement === input[delElement2]) { //wenn das aktuelle Element gleich dem ersten oder dem zweiten Element ist
+    }else {
+      result.push(currentElement)}}} //soll das aktuelle Element angehängt werden
+  else {
+    //math.floor rundet Zahlen mit Kommma ab
+    let delElement1 = Math.floor(input.length / 2)
+    for (let i = 0; i < input.length; i++) {
+      const currentElement = input[i]
+      if(currentElement === input[delElement1]) { //wenn das aktuelle Element gleich dem ersten Element ist
+    } 
+    else {
+      result.push(currentElement)}}} //soll das aktuelle Element angehängt werden
+  return result.join("")
+}
+
+
 
 export function aufgabe26 (args) {
   const input = args
