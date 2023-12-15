@@ -411,13 +411,14 @@ export function aufgabe27 (args) {
   const input = args
 
   for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i].charCodeAt(0)
+    const currentElement = input[i].charCodeAt(0) // Konvertiert das aktuelle Element in einen Unicode-Wert
     
     if (input.length == 0) return false
-    if (47 >= currentElement || currentElement >= 58) return false
+    if (47 >= currentElement || currentElement >= 58) return false // Wenn das aktuelle Element keine Zahlist, wird false zurückgegeben
   }
 return true
 }
+
 
 export function bubbleSort (args) {
   const text = args
@@ -425,13 +426,13 @@ export function bubbleSort (args) {
   for (let i = 0; 1 < list.length - 1; i++) {
   const currentElement = list[i]
   const nextElement = list[i + 1]
-  if (currentElement. charCodeAt (0) > nextElement.charCodeAt (0)) {
-  const tmp = list[i + 1]
+  if (currentElement.charCodeAt(0) > nextElement.charCodeAt(0)) {
+  const tmp = list[i + 1]  
   list[i + 1] = list[i]
   list[i] = tmp
   i = -1 
   }
 }
-  const result =list.join("")
+  const result = list.join("")
   return result
 }
