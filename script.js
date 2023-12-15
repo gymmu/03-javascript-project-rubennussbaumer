@@ -452,6 +452,21 @@ result.push(lastElement)
   return result.join("")
 }
 
+export function aufgabe23 (args) {
+  const input = args 
+  const result = []
+  
+  if (input.length === 0) return input // Wenn die Eingabe leer ist, wird eine leere Eingabe zurückgegeben
+
+  result.push(input[0])
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i] 
+    result.push(currentElement) 
+  }
+  result.push(input[0])
+  return result.join("") 
+}
+
 export function aufgabe26 (args) {
   const input = args
   const list = input.split("") 
