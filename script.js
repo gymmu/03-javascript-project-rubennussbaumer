@@ -340,24 +340,7 @@ export function aufgabe16(args) {
   }
 }
 
-export function aufgabe17 (args) {
- 
-  const text = args
-  const phrases = []
-  let currentPhrase = []
-  for (let i = 0; i < text.length; i++) {
-    const currentElement = text[i]
-    if (currentElement === ',') {
-      phrases.push(currentPhrase.join("")) //Wir speichern den aktuellen Satz als ein Element in phrases
-      currentPhrase = []  // Hiermit löschen wir alles was im aktuellen Satz beinhaltet war.
-    } else {
-      // Wenn wir kein "," lesen, dann hängen wir die Zeichen an den aktuellen Satz.
-      currentPhrase.push(currentElement)
-    }
-  }  
-  phrases.push(currentPhrase.join(""))
-  return phrases
-}  
+
 
 export function aufgabe18 (args) {
   const input = args
@@ -524,6 +507,8 @@ export function aufgabe27 (args) {
   }
 return true // Wenn alle Elemente eine Zahl sind, wird true zurückgegeben
 }
+
+
 
 
 
