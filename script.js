@@ -27,8 +27,7 @@ export function aufgabe02 (args) {
   for (let i = 0; i < input.length; i++) {
     let currentElement = input[i]
 
-    //falls es einen kleinen Buchstaben beinhaltet, soll dieser gross an die Liste anhgehängt werden.
-    currentElement=currentElement.toUpperCase ()
+    currentElement=currentElement.toUpperCase ()//falls es einen kleinen Buchstaben beinhaltet, soll dieser gross an die Liste anhgehängt werden.
     result.push(currentElement)
 
   }
@@ -340,6 +339,25 @@ export function aufgabe16(args) {
     return result1.join("") // Wenn die zweite Ergebnisgruppe leer ist, werden nur die Elemente der ersten Ergebnisgruppe zurückgegeben
   }
 }
+
+export function aufgabe17 (args) {
+ 
+  const text = args
+  const phrases = []
+  let currentPhrase = []
+  for (let i = 0; i < text.length; i++) {
+    const currentElement = text[i]
+    if (currentElement === ',') {
+      phrases.push(currentPhrase.join("")) //Wir speichern den aktuellen Satz als ein Element in phrases
+      currentPhrase = []  // Hiermit löschen wir alles was im aktuellen Satz beinhaltet war.
+    } else {
+      // Wenn wir kein "," lesen, dann hängen wir die Zeichen an den aktuellen Satz.
+      currentPhrase.push(currentElement)
+    }
+  }  
+  phrases.push(currentPhrase.join(""))
+  return phrases
+}  
 
 export function aufgabe18 (args) {
   const input = args
