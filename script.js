@@ -280,12 +280,12 @@ export function aufgabe11 (args) {
   
     for (let i = 0; i < input.length; i++) {
       const currentElement = input[i]
-      if (currentElement == "e") {
-        count++
+      if (currentElement == "e") { 
+        count++ //zähle die e
       }
     }
-    if (count == input.length) return(2)
-    else return(-1)  
+    if (count == input.length) return(2) //gibt 2, wenn es nur e gibt
+    else return(-1)  //gibt -1, wenn es keine e gibt
   }
   
 
